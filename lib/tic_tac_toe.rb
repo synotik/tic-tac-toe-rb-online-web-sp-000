@@ -24,3 +24,11 @@ end
 def move(board, index, character)
 
 end
+
+def position_taken?(board, index)
+  if board[index] == " "
+    false
+  else
+    true
+  end
+end
