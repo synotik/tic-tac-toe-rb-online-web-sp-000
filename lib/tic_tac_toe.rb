@@ -120,3 +120,12 @@ def over?(board)
     false
   end
 end
+
+def winner(board)
+  if winner_array = won?(board)
+    winner = board[winner_array[0]]
+    return winner
+  else
+    return nil
+  end
+end
