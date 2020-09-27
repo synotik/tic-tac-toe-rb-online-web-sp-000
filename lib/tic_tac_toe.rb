@@ -92,3 +92,31 @@ def won?(board)
   end
  false
 end
+
+def full?(board)
+  if board.detect {|i| i == " "}
+    false
+  else
+    true
+  end
+end
+
+def draw?(board)
+  if won?(board)
+    false
+  elsif full?(board)
+    true
+  end
+end
+
+def over?(board)
+  if won?(board)
+    true
+  elsif draw?(board)
+    true
+  elsif full?(board)
+    true
+  else
+    false
+  end
+end
