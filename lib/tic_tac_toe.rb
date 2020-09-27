@@ -44,6 +44,6 @@ end
 def turn()
   puts "Please enter your move (1-9): "
   input = gets.chomp
-
+  index = input_to_index(input)
 
 end
