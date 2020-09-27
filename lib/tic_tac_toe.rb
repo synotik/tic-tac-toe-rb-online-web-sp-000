@@ -40,3 +40,10 @@ def valid_move? (board, index)
     false
   end
 end
+
+def turn()
+  puts "Please enter your move (1-9): "
+  input = gets.chomp
+
+
+end
