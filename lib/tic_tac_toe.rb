@@ -57,5 +57,6 @@ def turn_count(board)
   board.each do |i|
     if board[i] == "X" || board[i] == "0"
       counter += 1
+    end
   end
 end
