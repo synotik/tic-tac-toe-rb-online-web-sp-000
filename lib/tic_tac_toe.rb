@@ -42,12 +42,12 @@ def valid_move? (board, index)
 end
 
 def turn(board)
-  display_board(board)
   puts "Please enter your move (1-9): "
   input = gets.chomp
   index = input_to_index(input)
   if valid_move?(board, index)
     move(board, index, current_player(board))
+    display_board(board)
   else
     turn(board)
   end
